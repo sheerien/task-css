@@ -1,0 +1,27 @@
+.product {
+    width: 350px;
+    height: 150px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    @include prefixer(animation, fadeInOut 2s infinite linear);
+    @include prefixer(box-shadow, 5px 6px 10px #ccc);
+    &:hover {
+        .overlay {
+            @include overlay(#000, .2);
+        }
+    }
+}
+
+@include keyFrame(fadeInOut) {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}

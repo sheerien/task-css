@@ -1,0 +1,23 @@
+{
+  "name": "task-css",
+  "version": "1.0.0",
+  "description": "itrax task css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheerien/task-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheerien/task-css/issues"
+  },
+  "homepage": "https://github.com/sheerien/task-css#readme",
+  "dependencies": {
+    "sass": "^1.35.2"
+  }
+}
