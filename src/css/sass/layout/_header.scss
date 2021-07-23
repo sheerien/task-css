@@ -20,6 +20,9 @@
                 opacity: 1;
                 visibility: visible;
             }
+            &.drop-item {
+                position: unset;
+            }
             // start dropdown-list
             .dropdown-list {
                 position: absolute;
@@ -33,9 +36,25 @@
                 opacity: 0;
                 visibility: hidden;
                 @include prefixer(transition, all .5s ease-in);
+                // start list-item
+                &.dero-plus {
+                    width: 90%;
+                    left: 5%;
+                    top: 100%;
+                    .nav-title {
+                        border-bottom: .1rem solid $blackAlpha;
+                        padding: 2rem 1rem;
+                        color: $greenColor;
+                        margin-bottom: 4rem;
+                        i {
+                            margin-right: 1.5rem;
+                        }
+                    }
+                }
                 .list-item {
                     margin-bottom: 1.6rem;
                 }
+                // start list-link
                 .list-link {
                     font-size: 1.5rem;
                     text-transform: uppercase;

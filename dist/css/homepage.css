@@ -77,6 +77,9 @@ a {
   opacity: 1;
   visibility: visible;
 }
+.navbar .navbar-nav .nav-item.drop-item {
+  position: unset;
+}
 .navbar .navbar-nav .nav-item .dropdown-list {
   position: absolute;
   background-color: #fff;
@@ -101,6 +104,20 @@ a {
   -moz-transition: all 0.5s ease-in;
   -ms-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
+}
+.navbar .navbar-nav .nav-item .dropdown-list.dero-plus {
+  width: 90%;
+  left: 5%;
+  top: 100%;
+}
+.navbar .navbar-nav .nav-item .dropdown-list.dero-plus .nav-title {
+  border-bottom: 0.1rem solid #bebebe3d;
+  padding: 2rem 1rem;
+  color: #6fd02c;
+  margin-bottom: 4rem;
+}
+.navbar .navbar-nav .nav-item .dropdown-list.dero-plus .nav-title i {
+  margin-right: 1.5rem;
 }
 .navbar .navbar-nav .nav-item .dropdown-list .list-item {
   margin-bottom: 1.6rem;
