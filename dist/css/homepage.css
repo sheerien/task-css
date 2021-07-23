@@ -17,17 +17,6 @@
 ** animation mixin
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-ul,
-ol {
-  list-style: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -38,6 +27,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
 }
 
 ::selection {
@@ -49,44 +39,104 @@ html {
   font-size: 60.5%;
 }
 
-.product {
-  width: 350px;
-  height: 150px;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  padding: 10px;
-  position: relative;
-  animation: fadeInOut 2s infinite linear;
-  -webkit-animation: fadeInOut 2s infinite linear;
-  -moz-animation: fadeInOut 2s infinite linear;
-  -ms-animation: fadeInOut 2s infinite linear;
-  -o-animation: fadeInOut 2s infinite linear;
-  box-shadow: 5px 6px 10px #ccc;
-  -webkit-box-shadow: 5px 6px 10px #ccc;
-  -moz-box-shadow: 5px 6px 10px #ccc;
-  -ms-box-shadow: 5px 6px 10px #ccc;
-  -o-box-shadow: 5px 6px 10px #ccc;
-}
-.product:hover .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 0;
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.5;
-  }
+a {
+  text-decoration: none;
+  color: #151515;
 }
+
+/*
+** start navbar
+*/
+.navbar {
+  background-color: #fff;
+  padding: 1.5rem 0;
+}
+.navbar .navbar-nav {
+  margin-left: 7rem;
+}
+.navbar .navbar-nav .nav-item {
+  margin-right: 2.5rem;
+  position: relative;
+}
+.navbar .navbar-nav .nav-item.active .nav-link {
+  color: #e52029;
+}
+.navbar .navbar-nav .nav-item:hover .dropdown-list {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+.navbar .navbar-nav .nav-item .dropdown-list {
+  position: absolute;
+  background-color: #fff;
+  width: 224px;
+  padding: 2.4rem 3rem;
+  top: 60px;
+  left: -15px;
+  filter: drop-shadow(2px 8px 6px #cc9);
+  -webkit-filter: drop-shadow(2px 8px 6px #cc9);
+  -moz-filter: drop-shadow(2px 8px 6px #cc9);
+  -ms-filter: drop-shadow(2px 8px 6px #cc9);
+  -o-filter: drop-shadow(2px 8px 6px #cc9);
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+.navbar .navbar-nav .nav-item .dropdown-list .list-item {
+  margin-bottom: 1.6rem;
+}
+.navbar .navbar-nav .nav-item .dropdown-list .list-link {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+.navbar .navbar-nav .nav-item .dropdown-list .list-link:hover {
+  color: #e52029;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #151515;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #e52029;
+}
+
+/*
+** end navbar
+*/
 
 /*# sourceMappingURL=homepage.css.map */

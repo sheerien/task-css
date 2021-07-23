@@ -1,0 +1,69 @@
+/*
+** start navbar
+*/
+
+.navbar {
+    background-color: $whiteColor;
+    padding: 1.5rem 0;
+    // start navbar-nav
+    .navbar-nav {
+        margin-left: 7rem;
+        // start nav-item
+        .nav-item {
+            margin-right: 2.5rem;
+            position: relative;
+            &.active .nav-link {
+                color: $redColor;
+            }
+            &:hover .dropdown-list {
+                @include prefixer(transform, scale(1));
+                opacity: 1;
+                visibility: visible;
+            }
+            // start dropdown-list
+            .dropdown-list {
+                position: absolute;
+                background-color: $whiteColor;
+                width: 224px;
+                padding: 2.4rem 3rem;
+                top: 60px;
+                left: -15px;
+                @include prefixer(filter, drop-shadow(2px 8px 6px #cc9));
+                @include prefixer(transform, scale(.7));
+                opacity: 0;
+                visibility: hidden;
+                @include prefixer(transition, all .5s ease-in);
+                .list-item {
+                    margin-bottom: 1.6rem;
+                }
+                .list-link {
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                    letter-spacing: .1rem;
+                    text-decoration: none;
+                    @include prefixer(transition, all .5s ease-in);
+                    &:hover {
+                        color: $redColor;
+                    }
+                }
+            }
+            // start nav-link
+            .nav-link {
+                font-size: 1.7rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $blackColor;
+                letter-spacing: .1rem;
+                @include prefixer(transition, all .5s ease-in);
+                &:hover {
+                    color: $redColor;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+** end navbar
+*/

@@ -1,10 +1,23 @@
-// body {
-//     background-color: #f6f6f6;
-//     font: {
-//         family: Tahoma;
-//         size: 16px;
-//     }
-// }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    @include prefixer(box-sizing,
+    border-box);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f6f6;
+}
+
+::selection {
+    background-color: $redColor;
+    color: $whiteColor;
+}
+
+html {
+    font-size: $mainSize;
+}
+
 ul,
 ol {
     list-style: none;
@@ -14,4 +27,5 @@ ol {
 
 a {
     text-decoration: none;
+    color: $blackColor;
 }
