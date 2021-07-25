@@ -40,25 +40,37 @@
 ** media query mixins
 */
 
-@mixin minSmallScreen {
-    @media (max-width: 575px) {
+@mixin xMinSmallScreen {
+    @media (max-width: 280px) {
         @content;
     }
 }
 
-@mixin maxSmallScreen {
+@mixin minSmallScreen {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin smallScreen {
     @media (max-width: 768px) {
         @content;
     }
 }
 
 @mixin mediumScreen {
-    @media (min-width: 769px) and (max-width: 1170px) {
+    @media (max-width: 991px) {
         @content;
     }
 }
 
 @mixin largeScreen {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin xLargeScreen {
     @media (max-width: 1171px) {
         @content;
     }
