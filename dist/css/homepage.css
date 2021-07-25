@@ -16,6 +16,9 @@
 /*
 ** animation mixin
 */
+/*
+** media query mixins
+*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
@@ -220,9 +223,48 @@ a {
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #e52029;
 }
+.navbar .icon-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar .icon-nav i {
+  font-size: 1.9rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.navbar .icon-nav i:hover span:nth-child(1) {
+  width: 15px;
+}
+.navbar .icon-nav i:hover span:nth-child(4) {
+  width: 20px;
+}
+.navbar .icon-nav i:hover span {
+  background-color: #e52029;
+}
+.navbar .icon-nav i span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 0.3rem;
+  background-color: #151515;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.navbar .icon-nav i span:nth-child(4) {
+  width: 15px;
+}
 
 /*
 ** end navbar
+*/
+/*
+** start Media query
+*/
+/*
+** end Media query
 */
 
 /*# sourceMappingURL=homepage.css.map */

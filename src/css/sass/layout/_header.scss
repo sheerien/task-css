@@ -121,9 +121,49 @@
             }
         }
     }
+    .icon-nav {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 1.9rem;
+            margin-left: 2rem;
+            cursor: pointer;
+            &:hover span:nth-child(1) {
+                width: 15px;
+            }
+            &:hover span:nth-child(4) {
+                width: 20px;
+            }
+            &:hover span {
+                background-color: $redColor;
+            }
+            span {
+                display: block;
+                width: 20px;
+                height: 2px;
+                margin-bottom: .3rem;
+                background-color: $blackColor;
+                &:nth-child(4) {
+                    width: 15px;
+                }
+                @include prefixer(transition, all .3s ease-in);
+            }
+        }
+    }
 }
 
 
 /*
 ** end navbar
+*/
+
+
+/*
+** start Media query
+*/
+
+@import 'header_media';
+
+/*
+** end Media query
 */
